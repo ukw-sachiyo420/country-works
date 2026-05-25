@@ -1,0 +1,374 @@
+/* ----------------------------------------------------------
+    共通スタイル
+   ---------------------------------------------------------- */
+
+/* 要素セレクターによる基本設定 */
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    color: #333333;
+}
+
+/* H1見出しの共通スタイル（上下のマージンをリセット） */
+h1 {
+    margin: 0;
+}
+
+/* H2見出しの共通スタイル */
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.5;
+    letter-spacing: 0.15em;
+    margin-bottom: 50px;
+}
+
+/* コンテンツ幅(1000px)の共通設定 */
+.content-width {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* ----------------------------------------------------------
+    ヘッダー（全ページ共通）
+   ---------------------------------------------------------- */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #639922;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+    font-size: 18px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* ----------------------------------------------------------
+    index.html - メインビジュアル
+   ---------------------------------------------------------- */
+.mv-section {
+    height: 800px;
+    background-image: url(../image/mainvisual.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-left: 100px;
+    align-content: center;
+}
+
+.mv-section .mv-copy {
+    font-size: 64px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    text-shadow: 0px 3px 15px rgba(59, 109, 17, 0.25);
+}
+
+.mv-section .mv-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+/* ----------------------------------------------------------
+    index.html - 私たちについてセクション
+   ---------------------------------------------------------- */
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-text {
+    padding: 100px;
+    align-content: center;
+}
+
+.about-text p {
+    font-size: 25px;
+    line-height: 2;
+}
+
+.about-section img {
+    width: 100%;
+}
+
+/* ----------------------------------------------------------
+    index.html - 事業内容セクション
+   ---------------------------------------------------------- */
+.service-section {
+    background-color: #eaf3de;
+    padding: 100px 0;
+}
+
+.service-section h2 {
+    text-align: center;
+}
+
+.service-list {
+    list-style-type: none;
+    padding: 0;
+    border-bottom: 1px solid #969696;
+}
+
+.service-item {
+    background-color: #ffffff;
+    padding: 50px 75px;
+    border-top: 1px solid #969696;
+    display: flex;
+    gap: 50px;
+}
+
+.service-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #202020;
+    width: 320px;
+    flex-shrink: 0;
+}
+
+.service-text {
+    font-size: 20px;
+    line-height: 2;
+    color: #333333;
+}
+
+/* ----------------------------------------------------------
+    index.html - お問い合わせセクション
+   ---------------------------------------------------------- */
+.cta-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.cta-section p {
+    font-size: 24px;
+}
+
+/* ----------------------------------------------------------
+   ボタン共通
+   ---------------------------------------------------------- */
+.btn {
+    display: inline-block;
+    background-color: #3b6d11;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 25px 50px;
+    border: 1px solid #3b6d11;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #3b6d11;
+}
+
+
+/* ----------------------------------------------------------
+    フッター（全ページ共通）
+   ---------------------------------------------------------- */
+.site-footer {
+    position: relative;
+}
+
+.top-link {
+    /* 大きさと丸い形を作る */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #3b6d11;
+
+    /* 背景色を決める */
+    background-color: #ffffff;
+
+    /* 文字のデザインを決める */
+    font-size: 14px;
+    font-weight: 700;
+    color: #3b6d11;
+
+    /* 中央に配置する */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* 位置を決める */
+    position: absolute;
+    top: -50px;
+    right: 100px;
+
+    /* アニメーションの設定 */
+    transition: all 0.2s;
+}
+
+.top-link:hover {
+    background-color: #3b6d11;
+    color: #ffffff;
+}
+
+.copyright {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Crimson Text", serif;
+    background-color: #3b6d11;
+    padding: 50px;
+}
+
+/* ----------------------------------------------------------
+    ページタイトル（company.html・contact.html共通）
+   ---------------------------------------------------------- */
+.page-title {
+    height: 300px;
+    border-bottom: 1px solid #639922;
+    padding-left: 100px;
+    align-content: center;
+}
+
+.page-title-en {
+    font-family: "Crimson Text", serif;
+    font-size: 20px;
+    color: #639922;
+    letter-spacing: 0.15em;
+}
+
+.page-title .page-title-ja {
+    font-size: 46px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: #202020;
+    margin-top: 10px;
+}
+
+/* ----------------------------------------------------------
+    company.html - 会社概要セクション
+   ---------------------------------------------------------- */
+.company-info-section {
+    padding: 100px 0;
+}
+
+.company-table {
+    width: 100%;
+    border-bottom: 1px solid #969696;
+}
+
+.company-table th,
+.company-table td {
+    border-top: 1px solid #969696;
+    color: #333333;
+    padding: 25px;
+}
+
+.company-table th {
+    background-color: #f5f5f5;
+    width: 200px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* ----------------------------------------------------------
+    company.html - アクセスセクション
+   ---------------------------------------------------------- */
+.access-section {
+    background-color: #eaf3de;
+    padding: 100px 0;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+}
+
+/* お問い合わせページ */
+.contact-container {
+    padding: 100px 0;
+}
+
+.contact-container p {
+    font-size: 18px;
+}
+
+/* フォーム */
+.contact-form,
+.contact-form-item {
+    margin-top: 50px;
+}
+
+.contact-form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: 700;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 600px;
+    border: 1px solid #333333;
+    padding: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+    border: 1px solid #333333;
+    padding: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #969696;
+}
+
+.required {
+    display: inline-block;
+    background-color: #3b6d11;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+/* ラジオボタンのラベル */
+.contact-form-item .radio-label {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* 送信ボタン（contactページ） */
+.contact-container .btn {
+    padding: 15px 50px;
+    font-size: 18px;
+    margin-top: 50px;
+}

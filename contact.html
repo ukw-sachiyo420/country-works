@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description"
+        content="COUNTRY WORKSは、地方創生・まちづくりコンサルティングを手がける会社です。地域の課題を丁寧に読み解き、持続可能な未来のための仕組みづくりをサポートします。">
+    <title>COUNTRY WORKS株式会社</title>
+    <link rel="icon" href="image/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="image/favicon.ico" sizes="32x32">
+    <link rel="apple-touch-icon" href="image/apple-touch-icon.png">
+    <meta property="og:title" content="お問い合わせ | COUNTRY WORKS株式会社">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://country-works.com/contact.html">
+    <meta property="og:image" content="https://country-works.com/image/og-image.png">
+    <!-- Google Fonts 読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet">
+    <!-- リセットCSS（Kiso.css）読み込み -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/kiso.css@latest/kiso.css">
+    <!-- メインスタイルシート読み込み -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="top">
+
+    <!-- ヘッダー -->
+    <header class="site-header">
+        <img src="image/logo.png" alt="COUNTRY WORKSのロゴ画像">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">トップページ</a></li>
+                <li><a href="company.html">会社概要</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-title">
+            <p class="page-title-en">CONTACT</p>
+            <h1 class="page-title-ja">お問い合わせ</h1>
+        </div>
+
+        <div class="contact-container content-width">
+            <p>必要事項をご記入の上、送信してください。</p>
+
+            <form action="" method="post" class="contact-form">
+                <p class="contact-form-item">
+                    <label for="your-name">氏名<span class="required">必須</span></label>
+                    <input type="text" id="your-name" name="your-name" placeholder="例）山田 太郎" required>
+                </p>
+
+                <p class="contact-form-item">
+                    <label for="your-email">メールアドレス<span class="required">必須</span></label>
+                    <input type="email" id="your-email" name="your-email" placeholder="例）info@example.com" required>
+                </p>
+
+                <p class="contact-form-item">
+                    <label for="your-phone">電話番号</label>
+                    <input type="tel" id="your-phone" name="your-phone" placeholder="例）090-1234-5678">
+                </p>
+
+                <p class="contact-form-item">
+                    <label>お問い合わせ種別<span class="required">必須</span></label>
+                    <label class="radio-label">
+                        <input type="radio" name="your-type" value="事業についてのご相談" required>事業についてのご相談
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="your-type" value="採用について">採用について
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="your-type" value="その他">その他
+                    </label>
+                </p>
+
+                <p class="contact-form-item">
+                    <label for="message">お問い合わせ内容<span class="required">必須</span></label>
+                    <textarea id="message" name="message" placeholder="お問い合わせ内容をご記入ください" required></textarea>
+                </p>
+                <button type="submit" class="btn">送信する</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="site-footer">
+        <p>
+            <a href="#top" class="top-link">
+                トップに戻る
+            </a>
+        </p>
+        <p class="copyright">2024 COUNTRY WORKS Inc. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
